@@ -3,11 +3,11 @@ import React from 'react';
 const FollowerCard = (props) => {
     console.log("FollowerCard props", props);
     return (
-        <div className="card-container">
+        <div className="follower-container">
             {props.followerData.followerData.map(follower => (
-                <div key={follower.id}>
+                <div key={follower.id} className="follower">
                     <div>
-                        <img src={follower.avatar_url}/>
+                        <img src={follower.avatar_url} className="image"/>
                     </div>
                     <div>
                         <h3>{follower.login}</h3>
